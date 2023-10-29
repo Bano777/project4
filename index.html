@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring the World of Web Design</title>
+    <script src="./jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#4c5055] text-white">
+        <!-- 1.NavBar Section...!!! -->
+        <div class="h-16 bg-[#FFD800] flex justify-between text-black font-[Poppins] container text-1xl mx-auto px-5 items-center">
+            <a href="" class="text-2xl"><img class="w-auto h-12 hover:scale-125 hover:transiyion-all duration-500" src="./fiverr-logo-1.png" alt=""></a>
+            <div class=" text-xl hidden md:flex sm:text-sm">
+              <a href="" class="hover:bg-white hover:text-black h-7 flex-column items-center px-5">Projects</a>
+              <a href="" class="hover:bg-white hover:text-black h-7 flex-column items-center px-5">All</a>
+              <a href="" class="hover:bg-white hover:text-black h-7 flex-column items- px-5">Website Clones</a>
+              <a href="" class="hover:bg-white hover:text-black h-7 flex-column items-center px-5">Work Experience</a>
+              <a href="" class="hover:bg-white hover:text-black h-7 flex-col items-center px-5">Contact Us</a>
+           
+            </div>
+            <button class="md:hidden" id="btn"><i class="fa-solid fa-bars text-2xl"></i></button>
+      </div>
+   <!-- 1.NavBar Hidden Section...!!! -->
+      <div class="container text-white bg-[#FFD800] mx-auto absolute hidden" id="menu">
+        <a href="" class="block hover:bg-white hover:text-black pl-5 py-5">All</a>
+        <a href="" class="block hover:bg-white hover:text-black pl-5 py-5">Projects</a>
+        <a href="" class="block hover:bg-white hover:text-black pl-5 py-5">Website Clones</a>
+        <a href="" class="block hover:bg-white hover:text-black pl-5 py-5">Work Experience</a>
+        <a href="" class="block hover:bg-white hover:text-black pl-5 py-5">Contact Us</a>
+      </div>
+  
+   <!-- 1. script for hidden NavBar Section...!!! -->
+      <script>
+         $(document).ready(function(){
+          $('#btn').click(function(){
+          $('#menu').slideToggle();
+          abc();    
+          })
+          function abc() {
+          var a ='<i class="fa-solid fa-xmark text-2xl"></i>';
+          var b ='<i class="fa-solid fa-bars text-2xl"></i>';
+  
+          if($('#btn').html()===a)
+          {
+              $('#btn').html(b);
+          }
+          
+          else{
+              $('#btn').html(a);
+          }
+          }
+         });
+      </script>
+
+      <!-- hidden slide -->
+   
+      <div class="w-[370px] h-[580px] border-[#FFD800] border rounded-lg container m-auto mr-8 bg-slate-800 relative float-right p-5 text-white hidden " id="slide">
+      <p>Have you discovered all of the other content on this website?</p>
+    </div>
+    <button class="hover:bg-yellow-200 hover:text-black bg-black text-white h-8 w-8 ml-8 rounded-full flex-col items-center px-5 text-2xl " id="bytn"><i class="fa-solid fa-check-to-slot"></i></button>
+  
+
+      <!-- script for hidden slide -->
+      <script>
+        $(document).ready(function(){
+          $('#bytn').click(function(){
+            $('#slide').slideToggle(1000);
+           
+          });
+        }); 
+      </script>
+
+     <!-- 5 carts section -->
+      <section class=" body-font ">
+  <div class="container px-5 py-14 mx-auto">
+    <div class="flex flex-wrap -m-4">
+        <!-- cart no.1 -->
+      <div class="p-4 md:w-1/3 hover:scale-110 hover:transition-all duration-500">
+        <div class="h-full border-2 border-[#FFD800] border-opacity-60 rounded-lg overflow-hidden">
+          <img class="lg:h-80 md:h-36 w-full object-cover object-center opacity-70 hover:scale-95 hover:transition-all duration-500 hover:opacity-100" src="./html 1.jpg" alt="blog">
+          <div class="p-6">
+            <h1 class="title-font text-lg font-medium text-[#FFD800] mb-3">Structural Mastery</h1>
+            <p class="leading-relaxed mb-3">HTML stands for Hyper Text Markup Language. HTML is the standard markup 
+                language for creating Web pages. HTML describes the structure of a Web page &consists of a series 
+                of elements. HTML elements tell the browser how to display the content. HTML holds all the content and 
+                design elements together</p>
+            <div class="flex items-center flex-wrap ">
+                <!-- button -->
+              <a class="text-[#FFD800] inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- cart no.2 -->
+      <div class="p-4 md:w-1/3 hover:scale-110 hover:transition-all duration-500">
+        <div class="h-full border-2 border-[#FFD800] border-opacity-60 rounded-lg overflow-hidden">
+          <img class="lg:h-80 md:h-36 w-full object-cover object-center opacity-70 hover:scale-95 hover:transition-all duration-500 hover:opacity-100" src="./css1.jpg" alt="blog">
+          <div class="p-6">
+            <h1 class="title-font text-lg font-medium text-[#FFD800] mb-3">Design Elegance</h1>
+            <p class="leading-relaxed mb-3">CSS is the language developers can use to style a website. The style sheet 
+                language describes how your website is presented and its layout. CSS is used hand in hand with HTML to 
+                add colors, backgrounds, layouts, font sizes, and more. This language is a core technology web developers 
+                use to design and build websites.</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-[#FFD800] inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- cart no.3 -->
+      <div class="p-4 md:w-1/3 hover:scale-110 hover:transition-all duration-500">
+        <div class="h-full border-2 border-[#FFD800] border-opacity-60 rounded-lg overflow-hidden">
+          <img class="lg:h-80 md:h-36 w-full object-cover object-center opacity-70 hover:scale-95 hover:transition-all duration-500 hover:opacity-100" src="./Screenshot jssssssssssss.png" alt="blog">
+          <div class="p-6">
+            <h1 class="title-font text-lg font-medium text-[#FFD800] mb-3">Dynamic Proficiency</h1>
+            <p class="leading-relaxed mb-3">JavaScript is a scripting or programming language that allows you to implement complex 
+                features on web pages.Javascript, on the other hand, is used to make Web pages interactive. JavaScript 
+                allows us to modify just about every aspect of the page: content, styling, and its response to user
+                 interaction</p>
+            <div class="flex items-center flex-wrap ">
+              <a class="text-[#FFD800] inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- cart no.4 -->
+      <div class="p-4 md:w-1/3 hover:scale-110 hover:transition-all duration-500">
+        <div class="h-full border-2 border-[#FFD800] border-opacity-60 rounded-lg overflow-hidden">
+          <img class="lg:h-80 md:h-36 w-full object-cover object-center opacity-70 hover:scale-95 hover:transition-all duration-500 hover:opacity-100" src="./jquerybrain.jpg" alt="blog">
+          <div class="p-6">
+            <h1 class="title-font text-lg font-medium text-[#FFD800] mb-3">Styling Mastery</h1>
+            <p class="leading-relaxed mb-3">Tailwind CSS is basically a utility-first CSS framework for rapidly building 
+                custom user interfaces. It is a highly customizable, low-level CSS framework that gives you all of the 
+                building blocks you need to build bespoke designs without any annoying opinionated styles you have to 
+                fight to override.</p>
+            <div class="flex items-center flex-wrap ">
+              <a class="text-[#FFD800] inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- cart no.5 -->
+      <div class="p-4 md:w-1/3 hover:scale-110 hover:transition-all duration-500">
+        <div class="h-full border-2 border-[#FFD800] border-opacity-60 rounded-lg overflow-hidden">
+          <img class="lg:h-80 md:h-36 w-full object-cover object-center opacity-70 hover:scale-95 hover:transition-all duration-500 hover:opacity-100" src="./taillll123.png" alt="blog">
+          <div class="p-6">
+            <h1 class="title-font text-lg font-medium text-[#FFD800] mb-3">Interactive Magic</h1>
+            <p class="leading-relaxed mb-3">A JavaScript library is a library of pre-written JavaScript code that allows 
+                for easier development of JavaScript-based applications, especially for AJAX and other web-centric 
+                technologies. Enables developers/programmers to write JavaScript faster and easier. It is also used to add animation.</p>
+            <div class="flex items-center flex-wrap ">
+              <a class="text-[#FFD800] inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+   <!-- footer section -->
+   <footer class="text-white pt-10 body-font">
+    <div class="container px-5 pb-5 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <span class="ml-3 text-xl"><img class="w-auto h-12 hover:scale-125 hover:transiyion-all duration-500" src="./fiverr-logo-1.png" alt=""></span>
+        </a>
+        <p class="mt-2 text-sm ">Exploring the World of Web Design</p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+
+        <!-- Category no.1 Section -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium  tracking-widest text-sm mb-3">Web Craftmanship</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class=" hover:text-gray-800">Artistry</a>
+            </li>
+            <li>
+              <a class=" hover:text-gray-800">Innovation</a>
+            </li>
+            <li>
+              <a class=" hover:text-gray-800">Creativity</a>
+            </li>
+            <li>
+              <a class=" hover:text-gray-800">Proficiency</a>
+            </li>
+          </nav>
+        </div>
+
+       <!-- Category no.2 Section -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium  tracking-widest text-sm mb-3">Resources</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class=" hover:text-gray-800">Applications</a>
+            </li>
+            <li>
+              <a class=" hover:text-gray-800">Documentations</a>
+            </li>
+            <li>
+              <a class=" hover:text-gray-800">Systems</a>
+            </li>
+            <li>
+              <a class=" hover:text-gray-800">FAQs</a>
+            </li>
+          </nav>
+        </div>
+
+         <!-- Category no.3 Section -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium  tracking-widest text-sm mb-3">Company</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class=" hover:text-gray-800">About US</a>
+            </li>
+            <li>
+              <a class=" hover:text-gray-800">Blogs</a>
+            </li>
+            <li>
+              <a class=" hover:text-gray-800">Partnerships</a>
+            </li>
+            <li>
+              <a class=" hover:text-gray-800">Careers</a>
+            </li>
+          </nav>
+        </div>
+
+         <!-- Category no.4 Section -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium  tracking-widest text-sm mb-3">Social</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class=" hover:text-gray-800">Facebook</a>
+            </li>
+            <li>
+              <a class=" hover:text-gray-800">Twitter</a>
+            </li>
+            <li>
+              <a class=" hover:text-gray-800">Instagram</a>
+            </li>
+            <li>
+              <a class=" hover:text-gray-800">LinkedIn</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+         <!-- copyright and social links section -->
+    <div class="bg-[#FFD800] text-black">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class=" text-sm text-center sm:text-left">© 2023 Web Designer —
+          <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class=" ml-1" target="_blank">@SOS Institute of Technology Multan</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a>
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 ">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 ">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
